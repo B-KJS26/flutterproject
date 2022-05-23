@@ -61,7 +61,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
                 fontSize: 30,
-                fontFamily: "wow"
+              ),
+            ),
+            Text(
+              '5월 23일(월)',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 26,
               ),
             ),
           ],
