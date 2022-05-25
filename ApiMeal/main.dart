@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() =>  runApp(const MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({ Key? key }) : super(key: key);
@@ -29,14 +29,45 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color(0xff9EC3FF),
       // ignore: avoid_unnecessary_containers
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconButton(icon: const Icon(Icons.menu), onPressed: () { 
-            print("누름");
-          },
-          color: Colors.white,
-        ),],
-      ),
+          //메뉴바
+            Column(
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.menu), 
+                  iconSize: 30,
+                  onPressed: () { 
+                   // ignore: avoid_print
+                      print("누름");
+                },
+                    color: Colors.white,
+                ),
+              ],
+            ),
+
+          //아침, 점심, 저녁
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              IconButton(
+                  icon: Image.asset('assets/images/sun.png'),
+                  iconSize: 40,
+                  onPressed: () {},
+              ),
+
+              IconButton(
+                  icon: Image.asset('assets/images/noon.png'),
+                  iconSize: 40,
+                  onPressed: () {},
+              ),
+
+              IconButton(
+                  icon: Image.asset('assets/images/moon.png'),
+                  iconSize: 40,
+                  onPressed: () {},
+              )
+            ]),
+          ]),
     );
   }
 }
