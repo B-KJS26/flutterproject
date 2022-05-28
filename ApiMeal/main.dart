@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'sikdan',
+      title: 'tlreks',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
@@ -36,16 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                   icon: const Icon(Icons.menu), 
                   iconSize: 30,
-                  onPressed: () { 
-                   // ignore: avoid_print
-                      print("누름");
-                },
+                  onPressed: () { },
                     color: Colors.white,
                 ),
               ],
             ),
 
-          //아침, 점심, 저녁
+          //아침, 점심, 저녁 선택 버튼
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
