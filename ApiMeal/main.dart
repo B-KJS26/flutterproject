@@ -49,19 +49,22 @@ class _MyHomePageState extends State<MyHomePage> {
               IconButton(
                   icon: Image.asset('assets/images/sun.png'),
                   iconSize: 40,
-                  onPressed: () {},
+                  onPressed: () {
+                  print("아침"},
               ),
 
               IconButton(
                   icon: Image.asset('assets/images/noon.png'),
                   iconSize: 40,
-                  onPressed: () {},
+                  onPressed: () {
+                  print("점심"},},
               ),
 
               IconButton(
                   icon: Image.asset('assets/images/moon.png'),
                   iconSize: 40,
-                  onPressed: () {},
+                  onPressed: () {
+                  print(""},},
               )
             ]),
           ]),
