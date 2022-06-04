@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 350 * (MediaQuery.of(context).size.height/360),
             child:Column(
               children:[
+                //누르면 아침 식단표로 변경
                 IconButton(
                   icon: Image.asset('assets/images/sun.png'),
                   iconSize: 40,
@@ -61,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     print('아침');
                   },
                 ),
-
+                //누르면 점심 식단표로 변경
                 IconButton(
                   icon: Image.asset('assets/images/noon.png'),
                   iconSize: 40,
@@ -69,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     print('점심');
                   },
                 ),
-
+                //누르면 저녁 식단표로 변경
                 IconButton(
                   icon: Image.asset('assets/images/moon.png'),
                   iconSize: 40,
