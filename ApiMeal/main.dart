@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 30 * (MediaQuery.of(context).size.width/360),
             child: Column(
               children: [
+                //메뉴버튼
               IconButton(
                 icon: const Icon(Icons.menu), 
                 iconSize: 30,
