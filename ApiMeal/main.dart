@@ -46,11 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ]),
           ),
-          
+          //메뉴버튼과 시간 조정 사이에 공백(?)을 주는 박스
           SizedBox(
             width: 260 * (MediaQuery.of(context).size.width/360),
           ),
           Container(
+            //화면 비율에 맞춰 조정
             width: 70* (MediaQuery.of(context).size.width/360),
             height: 350 * (MediaQuery.of(context).size.height/360),
             child:Column(
