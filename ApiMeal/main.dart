@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -23,78 +25,25 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
-  int morning = 0;
-  int lunch = 0;
-  int dinner = 0;
-  var morning_2 = 'assets/images/sun.png';
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff9EC3FF),
       body: Row(
         children: [
-          // ignore: sized_box_for_whitespace
-          Container(
-            width: 30 * (MediaQuery.of(context).size.width/360),
-            child: Column(
-              children: [
-              IconButton(
-                icon: const Icon(Icons.menu), 
-                iconSize: 30,
-                onPressed: () {
-                  
-                 // ignore: avoid_print
-                  print("누름");
-                },
-                  color: Colors.white,
-              ),
-            ]),
-          ),
-          
-          SizedBox(
-            width: 260 * (MediaQuery.of(context).size.width/360),
-          ),
-          // ignore: sized_box_for_whitespace
-          
-          Container(
-            width: 70* (MediaQuery.of(context).size.width/360),
-            height: 350 * (MediaQuery.of(context).size.height/360),
-            child:Column(
-              children:[
-                IconButton(
-                  icon: Image.asset(morning_2),
-                  iconSize: 40,
-                  onPressed: () {
-                    morning++;
-                  if(morning%2 == 0){
-                    morning_2 = 'assets/images/noon.png';
-                  }
-                  // ignore: curly_braces_in_flow_control_structures
-                  else morning_2 = 'assets/images/sun.png';
-                    // ignore: avoid_print
-                    print('아침');
-                  },
-                ),
+          //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
+          Flexible(
+            fit: FlexFit.tight,
+              child: Container(
+                height: 200,
+                width: 265,
+                color: Colors.white,
+                child: Row(
 
-                IconButton(
-                  icon: Image.asset('assets/images/noon.png'),
-                  iconSize: 40,
-                  onPressed: () {
-                    // ignore: avoid_print
-                    print('점심');
-                  },
                 ),
-
-                IconButton(
-                  icon: Image.asset('assets/images/moon.png'),
-                  iconSize: 40,
-                  onPressed: () {
-                    // ignore: avoid_print
-                    print('저녁');
-                  },
               ),
-          ]),
           ),
-        ],)
+        ],
+      ),
     );
   }
 }
