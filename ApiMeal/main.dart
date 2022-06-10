@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 
 void main() => runApp(const MyApp());
 
@@ -35,10 +34,18 @@ class _MyHomePageState extends State<MyHomePage> {
             fit: FlexFit.tight,
               child: Container(
                 height: 200,
-                width: 265,
                 color: Colors.white,
                 child: Row(
-
+                  children: [
+                    //밥 이미지
+                    Container(
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                        image: AssetImage('assets/images/rice.png'),
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
           ),
