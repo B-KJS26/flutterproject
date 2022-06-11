@@ -37,14 +37,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
                 child: Row(
                   children: [
-                    //밥 이미지
                     Container(
                       decoration: const BoxDecoration(
                         image: DecorationImage(
                         image: AssetImage('assets/images/rice.png'),
                         ),
                       ),
-                    )
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(100, 20, 0, 0),
+                      child: Text(
+                      '6월 11일 급식',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    ),
                   ],
                 ),
               ),
