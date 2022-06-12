@@ -37,16 +37,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
                 child: Row(
                   children: [
+                    
+                    // ignore: sized_box_for_whitespace
                     Container(
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                        image: AssetImage('assets/images/rice.png'),
-                        ),
-                      ),
+                      width: 100,
+                      height: 80,
+                      child: Image.asset('assets/images/rice.png')
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(100, 20, 0, 0),
-                      child: Text(
+                      margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      child: const Text(
                       '6월 11일 급식',
                       style: TextStyle(
                         fontSize: 20,
