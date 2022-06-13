@@ -27,17 +27,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff9EC3FF),
-      body: Row(
+      body: Column(
         children: [
           //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
           Flexible(
-            fit: FlexFit.tight,
               child: Container(
                 height: 200,
                 color: Colors.white,
                 child: Row(
                   children: [
-                    
                     // ignore: sized_box_for_whitespace
                     Container(
                       width: 100,
@@ -57,6 +55,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+          ),
+          //시간표가 들어갈 컨테이너
+          Flexible(
+            child: Container(
+                margin: const EdgeInsets.all(20),
+                width: 230,
+                height: 400,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+            ),
+          ),
           ),
         ],
       ),
