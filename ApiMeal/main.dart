@@ -31,31 +31,38 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
           Flexible(
-              child: Container(
-                height: 200,
-                color: Colors.white,
                 child: Row(
                   children: [
                     // ignore: sized_box_for_whitespace
                     Container(
-                      width: 100,
-                      height: 80,
-                      child: Image.asset('assets/images/rice.png')
-                    ),
+                      margin: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                      width: 70,
+                      height: 70,
+                      child: Image.asset('assets/images/spoonandfork.png'),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: Colors.white,//테두리
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.6),
+                          ),
+                        ]
+                    ),),
+
                     Container(
-                      margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-                      child: const Text(
-                      '6월 11일 급식',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    ),
+                    margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                    child: const Text(
+                    '급식',
+                    style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
                   ],
                 ),
               ),
-          ),
+          
           //시간표가 들어갈 컨테이너
           Flexible(
             child: Container(
