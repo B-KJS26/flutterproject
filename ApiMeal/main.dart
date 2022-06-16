@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 
 void main() => runApp(const MyApp());
 
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,//테두리
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey.withOpacity(0.6),
+                            color: Colors.grey.withOpacity(0.9),
                           ),
                         ]
                     ),),
@@ -56,27 +57,41 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-                  ],
-                ),
-              ),
-          
+              ),),),
+              ],),),
           //시간표가 들어갈 컨테이너
-          Flexible(
-            child: Container(
-                margin: const EdgeInsets.all(20),
-                width: 230,
-                height: 400,
+          const SizedBox(
+            height: 30,
+          ),
+
+          Container(
+                margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.67,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
             ),
           ),
-          ),
+          Container(
+            child: Column(
+              
+            ),
+          )
         ],
       ),
+    bottomNavigationBar: BottomNavigationBar(
+      items: const<BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.text_snippet),
+          label: 'whdydwp',
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '홈',
+          ),
+      ],
+    ),
     );
   }
 }
