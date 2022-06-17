@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
           Flexible(
+            //가로로 조절 위젯
                 child: Row(
                   children: [
                     // ignore: sized_box_for_whitespace
@@ -43,13 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
                         color: Colors.white,//테두리
+                        //그림자
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.9),
                           ),
                         ]
                     ),),
-
+                    
                     Container(
                     margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                     child: const Text(
