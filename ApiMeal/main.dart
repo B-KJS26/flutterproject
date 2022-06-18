@@ -59,8 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-              ),),),
-              ],),),
+              ),
+            ),
+          ),
+        ],
+      ),
+     ),
           //시간표가 들어갈 컨테이너
           const SizedBox(
             height: 30,
