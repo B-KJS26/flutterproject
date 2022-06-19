@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       items: const<BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.text_snippet),
-          label: 'whdydwp',
+          label: '메뉴',
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.home),
