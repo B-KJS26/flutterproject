@@ -27,12 +27,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff9EC3FF),
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
           Flexible(
-            //가로로 조절 위젯
                 child: Row(
                   children: [
                     // ignore: sized_box_for_whitespace
@@ -41,30 +40,38 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 70,
                       height: 70,
                       child: Image.asset('assets/images/spoonandfork.png'),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
+                      decoration: const BoxDecoration(
                         color: Colors.white,//테두리
-                        //그림자
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10),
+                        ),
+                        // ignore: prefer_const_literals_to_create_immutables
                         boxShadow: [
+                          // ignore: prefer_const_constructors
                           BoxShadow(
-                            color: Colors.grey.withOpacity(0.9),
+                            color: Colors.grey,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
                           ),
                         ]
                     ),),
-                    
+
                     Container(
-                    margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                    margin: const EdgeInsets.fromLTRB(15, 0, 0, 0),
                     child: const Text(
                     '급식',
                     style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ],
-      ),
-     ),
+              ),),),
+              ],),),
           //시간표가 들어갈 컨테이너
           const SizedBox(
             height: 30,
@@ -77,20 +84,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
+                  boxShadow: [
+                          // ignore: prefer_const_constructors
+                          BoxShadow(
+                            color: Colors.grey,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                        ]
             ),
           ),
-          Container(
-            child: Column(
-              
-            ),
-          )
+          
         ],
       ),
     bottomNavigationBar: BottomNavigationBar(
       items: const<BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.text_snippet),
-          label: '메뉴',
+          label: 'whdydwp',
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.home),
