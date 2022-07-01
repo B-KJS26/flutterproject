@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.text_snippet),
-          label: '홈',
+          label: '메뉴',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.text_snippet),
