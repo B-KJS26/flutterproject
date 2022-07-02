@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 70,
                       child: Image.asset('assets/images/spoonandfork.png'),
                       decoration: const BoxDecoration(
-                        color: Colors.white,//테두리
+                        color: Colors.white,//테두리설정
                         borderRadius: BorderRadius.all(
                           Radius.circular(10),
                         ),
