@@ -104,6 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
           
         ],
       ),
+      //바텀내비게이션 바
     bottomNavigationBar: BottomNavigationBar(
       items: const<BottomNavigationBarItem>[
         BottomNavigationBarItem(
