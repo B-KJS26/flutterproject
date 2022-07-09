@@ -34,8 +34,8 @@ class BottomBar extends StatelessWidget {
               height: 70,
               padding: const EdgeInsets.only(bottom: 10, top: 5),
               child: const TabBar(
-                //tab 하단 indicator size -> .label = label의 길이
-                //tab 하단 indicator size -> .tab = tab의 길이
+                 indicator size -> .label = label의 길이
+                 indicator size -> .tab = tab의 길이
                 indicatorSize: TabBarIndicatorSize.label,
                 //tab 하단 indicator color
                 indicatorColor: Colors.red,
