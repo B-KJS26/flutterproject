@@ -8,7 +8,7 @@ class TextClass {
 }
 void main() {
   runApp(MaterialApp(
-    title: 'Jo',
+    title: 'XX',
     home: Scaffold(body: MyApp())),
   );
 }
