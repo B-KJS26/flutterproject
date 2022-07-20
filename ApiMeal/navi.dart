@@ -28,7 +28,7 @@ class BottomBar extends StatelessWidget {
           extendBodyBehindAppBar: true, // add this line
 
           bottomNavigationBar: Container(
-            color: Colors.white, //색상
+            color: Colors.white, //색상흰색으로
             child: Container(
               height: 70,
               padding: const EdgeInsets.only(bottom: 10, top: 5),
