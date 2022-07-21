@@ -36,7 +36,6 @@ class MyHomePage extends StatefulWidget {
   var now = new DateTime.now();
 class _MyHomePageState extends State<MyHomePage> {
   @override
-  // ignore: override_on_non_overriding_member
   final standardDeviceWidth = 360;
   String Month = DateFormat('M').format(now);
   String Day = DateFormat('d').format(now);
