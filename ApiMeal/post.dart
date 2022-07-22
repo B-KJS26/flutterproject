@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
     return Center(
       child: FutureBuilder<TextClass>(
         future: (() async {
-          //API
           final res =
             await http.get(Uri.parse('http://127.0.0.1:8080/api/school/neisAPI/meal/breakfast'));
           return TextClass(title: json.decode(res.body)['title']);
