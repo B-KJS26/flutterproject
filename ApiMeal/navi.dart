@@ -25,7 +25,7 @@ class BottomBar extends StatelessWidget {
               ),
             ],
           ),
-          extendBodyBehindAppBar: true, // add this line
+          extendBodyBehindAppBar: true, 
 
           bottomNavigationBar: Container(
             color: Colors.white, //색상흰색으로
