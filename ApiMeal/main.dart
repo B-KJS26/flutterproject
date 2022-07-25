@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-// ignore: unused_import
 import 'package:meal/post.dart';
 // ignore: unused_import
 import 'package:provider/provider.dart';
