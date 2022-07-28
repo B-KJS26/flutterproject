@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:meal/post.dart';
-// ignore: unused_import
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import 'dart:ui';
