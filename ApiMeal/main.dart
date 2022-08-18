@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color(0xffffffff),
       body: Column(
         children: [
-          //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동 조절
+          //FLEXIBLE을 이용하여 화면이 어떻게 달라져도 자동
           Flexible(
                 child: Row(
                   children: [
