@@ -25,7 +25,7 @@ class Siganapi extends StatefulWidget {
 class _SiganapiState extends State<Siganapi> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Column(
 
     );
   }
