@@ -28,6 +28,7 @@ class _SiganapiState extends State<Siganapi> {
     return Column(
         children: [
           Container(
+            //MediaQuery.of(context).size~~는 화면 비율에 맞춰서 크기 자동 조정 되도록 화면 비율에 비례하여 달라짐
             width: MediaQuery.of(context).size.width * 1,
             height: MediaQuery.of(context).size.height * 0.2,
             color: const Color(0xff9EC3FF),
