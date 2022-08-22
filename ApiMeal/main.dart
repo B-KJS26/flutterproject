@@ -92,6 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             width:  0.92 * MediaQuery.of(context).size.width,
             height: 0.71 * MediaQuery.of(context).size.height,
+            child: Row(
+              children: [
+                Text(
+                  '아 씨발',
+                ),
+                Text(
+                  'wjatla',
+                ),
+                Text(
+                  '저년ㄱ'
+                ),
+              ],
+            ),
             decoration: BoxDecoration(
                   image: const DecorationImage(
                     fit: BoxFit.fill,
@@ -103,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.grey.shade400,
                             offset: const Offset(0, 20.0),
                             blurRadius: 30.0,
-                            spreadRadius: 0,
+                            spreadRadius: 0,        
                     ),
                   ],
             ),   
