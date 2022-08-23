@@ -92,16 +92,39 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             width:  0.92 * MediaQuery.of(context).size.width,
             height: 0.71 * MediaQuery.of(context).size.height,
-            child: Row(
+            child: Column(
               children: [
-                Text(
-                  '아 씨발',
-                ),
-                Text(
-                  'wjatla',
-                ),
-                Text(
-                  '저년ㄱ'
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 0.33 * MediaQuery.of(context).size.height,
+                    ),
+                    Text(
+                      '아침',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '점심',
+                       style: TextStyle(
+                          fontSize: 20,
+                        ),
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '저녁',
+                       style: TextStyle(
+                          fontSize: 20,
+                        ),
+                    ),
+                  ],
                 ),
               ],
             ),
